@@ -1,12 +1,18 @@
 <template>
   <div id="app">
+  <navigation></navigation>
     <router-view></router-view>
+  <footer></footer>
   </div>
 </template>
 
 <script>
+import navigation from '@/components/Navigation';
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    navigation
+  }
 }
 </script>
 
@@ -17,6 +23,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 150px;
 }
 </style>

@@ -12,16 +12,4 @@ new Vue({
   router,
   template: '<App/>',
   components: { App }
-})
-
-new Vue({
-	el: '#navBar',
-	router,
-	components: { Navigation }
-})
-
-var menu = document.getElementById('menu');
-var toggler = document.getElementById('toggleMenu');
-toggler.onclick = function(){
-  menu.classList.toggle('opaToggle');
-};
+});
