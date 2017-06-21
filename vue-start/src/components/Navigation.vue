@@ -2,7 +2,7 @@
 	<nav class="topBar">
       <img src="static/logo.png" />
       <ul id="menu" v-bind:class="{opaToggle: isActive}">
-        <li v-for="item in items"><router-link to="{item.url}">{item.name}</router-link></li>
+        <li v-for="item in items"><router-link :to="item.url"> {{item.name}} </router-link></li>
         
       </ul>
       <img id="toggleMenu" v-on:click="hide" src="static/menu.svg"/>
@@ -18,7 +18,7 @@ export default {
       isActive: false,
       items: [
         {url: '/', name: 'Home'},
-        {url: '/foo', name: 'About'},
+        {url: '/about', name: 'About'},
         {url: '/product', name: 'Product'},
         {url: '/docs', name: 'Docs'},
         {url: '/contact', name: 'Contact'}
@@ -86,10 +86,10 @@ export default {
   margin-top: 180px;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 790px) {
   #menu {
     display: none;
-    margin-top: -20px;
+    margin-top: -1px;
     ul {
       width: 100%;
       li {
@@ -112,7 +112,7 @@ export default {
     margin: 10px 0;
       a {
         text-align: center;
-        margin-left: 50px;
+        margin-left: 120px;
       }
     }
     img {
