@@ -2,16 +2,17 @@
   <div id="app">
   <navigation></navigation>
     <router-view></router-view>
-  <footer></footer>
+  <appFooter></appFooter>
   </div>
 </template>
 
 <script>
 import navigation from '@/components/Navigation';
+import appFooter from '@/components/AppFooter';
 export default {
   name: 'app',
   components: {
-    navigation
+    navigation, appFooter
   }
 }
 </script>

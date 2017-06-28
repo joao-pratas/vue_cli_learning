@@ -6,6 +6,7 @@ import About from '@/components/About'
 import Product from '@/components/Product'
 import Docs from '@/components/Docs'
 import Contact from '@/components/Contact'
+import AppFooter from '@/components/AppFooter'
 
 Vue.use(Router)
 
