@@ -1,6 +1,6 @@
 <template>
 <div class="myFooter">
-  <p>{{copyright}}</p>
+  <p>Copyright &copy; Joao Pratas, 2017</p>
 	<nav>
       <ul id="menu" v-bind:class="{opaToggle: isActive}">
         <li v-for="item in items"><router-link :to="item.url"> {{item.name}} </router-link></li>
@@ -43,13 +43,13 @@ p {
 }
 #menu {
   margin-top: 20px;
-  width: 90%;
+  width: 94%;
   margin: 0 auto;
 }
 .myFooter{
   position: absolute;
   width: 100% !important;
-  height: 120px;
+  height: 90px;
   bottom: 0;
   left: 0;
   background: rgba(0,0,0,0.95);

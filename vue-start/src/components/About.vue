@@ -1,12 +1,12 @@
 <template>
-  <div class="hello">
-  About
+  <div class="about">
+    <h1>About Me</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'about',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
@@ -21,6 +21,17 @@ export default {
 
 h1, h2 {
   font-weight: normal;
+  text-align: left;
+}
+
+h2, h3 {
+  color: #42b983;
+}
+
+.about {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 ul {
