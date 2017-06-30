@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
   Product
+  <p>My name is Joao Pratas and I'm 23 years old.</p>
+    <p>Essentially I'm a Web Developer with a passion for music</p>
   </div>
 </template>
 

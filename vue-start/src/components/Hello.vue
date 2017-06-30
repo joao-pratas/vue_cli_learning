@@ -2,6 +2,8 @@
   <div class="hello">
   <h2>{{ testElement }}</h2>
     <h1>{{ msg }}</h1>
+    <p>My name is Joao Pratas and I'm 23 years old.</p>
+    <p>Essentially I'm a Web Developer with a passion for music</p>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
