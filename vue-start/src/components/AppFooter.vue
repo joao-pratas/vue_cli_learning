@@ -1,9 +1,15 @@
 <template>
 <div class="myFooter">
+  <link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
   <p>Copyright &copy; Joao Pratas, 2017</p>
 	<nav>
       <ul id="menu" v-bind:class="{opaToggle: isActive}">
         <li v-for="item in items"><router-link :to="item.url"> {{item.name}} </router-link></li>
+      </ul>
+      <ul id="menu" v-bind:class="{opaToggle: isActive}">
+        <li>
+          <i class="fa fa-font-awesome" aria-hidden="true"></i>
+        </li>
       </ul>
     </nav>
 </div>
@@ -49,7 +55,7 @@ p {
 .myFooter{
   position: absolute;
   width: 100% !important;
-  height: 90px;
+  height: 120px;
   bottom: 0;
   left: 0;
   background: rgba(0,0,0,0.95);
@@ -91,6 +97,12 @@ p {
   margin-top: 180px;
 }
 
+@media only screen and (max-width:690px) {
+  .noMobile {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 790px) {
   #menu {
     display: none;
@@ -118,6 +130,11 @@ p {
       a {
         text-align: center;
         margin-left: 120px;
+      }
+      i {
+        text-align: center;
+        font-family: fontAwesome;
+        color: white;
       }
     }
     img {
